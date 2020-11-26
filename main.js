@@ -1,17 +1,48 @@
+class Case { 
+	 
+	constructor(name, amount)  { 
+		 
+		this.name = name; 
+		this.amount = amount; 
+		this.isOpen - false;		
+	 
+	}	
+ 
+	showCase()  { 
+	 
+		console.log(`Case Data:\n Case Number: ${this.name}\n Amount: ${this.amount}`); 
+	 
+	}	
+ 
+}	
+
 class Game {
-    constructor() { }
-
-    playerName = ''
-    activeGame = true
-    playerWinnings = 0
-    bankerOffer = 0
-    round = 0
+	
+    constructor() {
+		
+	this.playerName = '';
+    this.activeGame = true
+    this.playerWinnings = 0
+    this.bankerOffer = 0
+    this.round = 0
+	this.casesLeft = 26
+	this.prizeValues = [.01, 1, 5, 10, 50, 100, 250, 500, 750, 1000, 3000, 5000, 10000, 15000, 25000, 50000, 75000, 100000, 250000, 500000]
+	}
 }
+ 
+// Instantiate an object of type Case(): 
+ 
+let butts = new Case("1", 1500)
+let g = new Game()
+ 
+ console.log(g.casesLeft)
+butts.showCase(); 
 
-class Case {
-    constructor() { }
 
-}
+
+
+
+
 
 const game = {
     activeBoard: true,
