@@ -9,17 +9,13 @@ let numberZ = []
 class Case {
 
     constructor(name, amount) {
-
         this.name = name;
         this.amount = amount;
         this.isOpen - false;
-
     }
 
     showCase() {
-
-        console.log(`Case Data:\n Case Number: ${this.name}\n Amount: ${this.amount}`);
-
+        console.log(`Case Data:\n Case Number: ${this.name}\n Amount: ${dollarMe(this.amount)}`)
     }
 
 }
@@ -27,7 +23,6 @@ class Case {
 class Game {
 
     constructor() {
-
         this.playerName = '';
         this.activeGame = true
         this.playerWinnings = 0
