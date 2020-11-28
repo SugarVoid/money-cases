@@ -16,6 +16,11 @@
     color: gray;
 }
 
+#updateWindow {
+    border: #000000;
+    border-style: solid;
+}
+
 .case {
     background-color: rgb(243, 243, 243);
     border: 5px;
